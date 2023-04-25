@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Uploader</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="py-5 text-center bg-secondary text-white">
+            <h1 class="mb-3">Upload Image</h1>
+            <form action=""   method="post">
+                {% csrf_token %}
+                {{form}}
+                <input type="submit" class="btn btn-danger"value="Upload">
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
